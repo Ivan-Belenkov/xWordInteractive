@@ -1,0 +1,138 @@
+[
+  {
+    "id": "ModuleManager",
+    "cfg": {
+      "cdn": "/build/modules"
+    }
+  },
+  {
+    "id": "application",
+    "cfg":  {
+      "cssUrl": ["/"],
+      "cacheTimeSec": "300",
+      "cdnUrl": "/"
+    }
+  },
+  {
+    "id": "textClassificationService",
+    "cfg": {
+      "providers": [
+        {
+          "id": "indico",
+          "url": "//semantic-inhabit.as.arkadiumhosted.com/api/tags/indico"
+        },
+        {
+          "id": "alchemy",
+          "url": "//semantic-inhabit.as.arkadiumhosted.com/api/alchemy",
+          "prefetchMethods": []
+        }
+      ]
+    }
+  },
+  {
+    "id": "widget",
+    "cfg": [
+      {
+        "id": "widget",
+        "cfg": {
+          "title":"test",
+          "logoVisibility": "collapse",
+          "headerVisibility": false,
+          "secondPageUrl": "",
+          "layoutName": "listPage",
+          "_background": "#fff",
+          "presenter": "contentPresenter",
+          "rulesGroup": "inWidget"
+        }
+      },
+      {
+        "id": "accordion",
+        "cfg": {
+          "title": "Today's features",
+          "secondPageUrl": "",
+          "layoutName": "carouselPage",
+          "background": "E2F0FE"
+        }
+      }
+    ]
+  },
+  {
+    "id": "adsPreroll",
+    "cfg": {
+      "frequency": 0,
+      "providers": [
+        {
+          "id": "adGoogleFlash",
+          "support": [
+            "pc"
+          ]
+        },
+        {
+          "id": "adGoogle",
+          "support": [
+            "tablet",
+            "phone"
+          ]
+        }
+      ],
+      "contentTypes" : ["quizark", "truefalse", "flash", "html5","interactive"]
+    }
+  },
+  {
+    "id": "adGoogle",
+    "cfg": {
+      "clientName": "arkadium.com"
+    }
+  },
+  {
+    "id": "adGoogleFlash",
+    "cfg": {
+      "clientName": "arkadium.com",
+      "timeout": 1000000
+    }
+  },
+  {
+    "id": "adStaticGoogle",
+    "cfg": {
+      "clientName": "GreatDayGames"
+    }
+  },
+  {
+    "id": "ga",
+    "cfg": {
+      "id": "UA-70970352-1",
+      "sample": 1,
+      "enabled": false
+    }
+  },
+  {
+    "id": "googleTag",
+    "cfg": {
+      "id": "GTM-P6ZZ7X",
+      "sample": 1,
+      "enabled": true
+    }
+  },
+  {
+    "id": "appInsight",
+    "cfg": {
+      "enabled": false,
+      "instrumentationKey": ""
+    }
+  },
+  {
+    "id": "contentPresenter",
+    "cfg": [
+      {
+        "id": "inWidget",
+        "cfg": {
+          "modules": [
+            {
+              "id": "xwordinteractive"
+            }
+          ]
+        }
+      }
+    ]
+  }
+]
